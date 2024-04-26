@@ -32,21 +32,21 @@
     <body>
 
         <div class="row">
-            <div class="left-column"><div class="image-container"><img id="pizza" src="img/pizza.png" height="200" width="200"/></div></div>
-            <div class="right-column"><div class="image-container"><img src="img/sandwich.png" height="200" width="200"/></div></div>
-            <div class="center-column"><div class="image-container"><img src="img/shirt.png" height="200" width="200"/></div></div>
+            <div class="left-column"><div class="image-container"><img id="one" src="img/icon-01.png" height="400" width="400"/></div></div>
+            <div class="right-column"><div class="image-container"><img id="two" src="img/icon-02.png" height="400" width="400"/></div></div>
+            <div class="center-column"><div class="image-container"><img id="three" src="img/icon-03.png" height="400" width="400"/></div></div>
         </div>
 
         <div class="row">
-            <div class="left-column"><div class="image-container"><img src="img/wallet.png" height="200" width="200"/></div></div>
-            <div class="right-column"><div class="image-container"><img src="img/cigs.png" height="200" width="200"/></div></div>
-            <div class="center-column"><div class="image-container"><img src="img/6.png" height="200" width="200"/></div></div>
+            <div class="left-column"><div class="image-container"><img id="four" src="img/icon-04.png" height="400" width="400"/></div></div>
+            <div class="right-column"><div class="image-container"><img id="five" src="img/icon-08.png" height="400" width="400"/></div></div>
+            <div class="center-column"><div class="image-container"><img id="six" src="img/icon-05.png" height="400" width="400"/></div></div>
         </div>
 
         <div class="row">
-            <div class="left-column"><div class="image-container"><img src="img/trr.png" height="200" width="200"/></div></div>
-            <div class="right-column"><div class="image-container"><img src="img/sqr.png" height="200" width="200"/></div></div>
-            <div class="center-column"><div class="image-container"><img src="img/squ.png" height="200" width="200"/></div></div>
+            <div class="left-column"><div class="image-container"><img id="seven" src="img/icon-06.png" height="400" width="400"/></div></div>
+            <div class="right-column"><div class="image-container"><img id="eight" src="img/icon-07.png" height="400" width="400"/></div></div>
+            <div class="center-column"><div class="image-container"><img id="nine" src="img/icon-08.png" height="400" width="400"/></div></div>
         </div>
 
     </body>
@@ -57,10 +57,18 @@
     const gunshot1 = document.createElement ('audio')
     gunshot1.src = 'sounds/gunshot1.wav'
 
-    const pizza = document.getElementById ('pizza')
-    pizza.onpointerdown = () => {
+    const one = document.getElementById ('one')
+    one.onpointerdown = () => {
         gunshot1.play ()
     }
+    const siren = document.createElement ('audio')
+    siren.src = 'sounds/gunshot1.wav'
+
+    const one = document.getElementById ('one')
+    one.onpointerdown = () => {
+        gunshot1.play ()
+    }
+    
 </script>
 
 
