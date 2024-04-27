@@ -39,14 +39,14 @@
 
         <div class="row">
             <div class="left-column"><div class="image-container"><img id="four" src="img/icon-04.png" height="400" width="400"/></div></div>
-            <div class="right-column"><div class="image-container"><img id="five" src="img/icon-08.png" height="400" width="400"/></div></div>
-            <div class="center-column"><div class="image-container"><img id="six" src="img/icon-05.png" height="400" width="400"/></div></div>
+            <div class="right-column"><div class="image-container"><img id="nine" src="img/icon-09.png" height="400" width="400"/></div></div>
+            <div class="center-column"><div class="image-container"><img id="five" src="img/icon-05.png" height="400" width="400"/></div></div>
         </div>
 
         <div class="row">
-            <div class="left-column"><div class="image-container"><img id="seven" src="img/icon-06.png" height="400" width="400"/></div></div>
-            <div class="right-column"><div class="image-container"><img id="eight" src="img/icon-07.png" height="400" width="400"/></div></div>
-            <div class="center-column"><div class="image-container"><img id="nine" src="img/icon-08.png" height="400" width="400"/></div></div>
+            <div class="left-column"><div class="image-container"><img id="six" src="img/icon-06.png" height="400" width="400"/></div></div>
+            <div class="right-column"><div class="image-container"><img id="seven" src="img/icon-07.png" height="400" width="400"/></div></div>
+            <div class="center-column"><div class="image-container"><img id="eight" src="img/icon-08.png" height="400" width="400"/></div></div>
         </div>
 
     </body>
@@ -61,14 +61,53 @@
     one.onpointerdown = () => {
         gunshot1.play ()
     }
-    const siren = document.createElement ('audio')
-    siren.src = 'sounds/gunshot1.wav'
+    const gunshot2 = document.createElement ('audio')
+    gunshot2.src = 'sounds/gunshot2.wav'
 
-    const one = document.getElementById ('one')
-    one.onpointerdown = () => {
-        gunshot1.play ()
+    const nine = document.getElementById ('nine')
+    nine.onpointerdown = () => {
+        gunshot2.play ()
     }
-    
+    const gunshot3 = document.createElement ('audio')
+    gunshot3.src = 'sounds/gunshot3.wav'
+
+    const four = document.getElementById ('four')
+    four.onpointerdown = () => {
+        gunshot3.play ()
+    }
+    const emt = document.createElement ('audio')
+    emt.src = 'sounds/emt.wav'
+
+    const eight = document.getElementById ('eight')
+    eight.onpointerdown = () => {
+        emt.play ()
+    }
+    const hands = document.createElement ('audio')
+    hands.src = 'sounds/hands.wav'
+
+    const three = document.getElementById ('three')
+    three.onpointerdown = () => {
+        hands.play ()
+    }
+    const siren1 = document.createElement ('audio')
+    siren1.src = 'sounds/siren1.wav'
+
+    const two = document.getElementById ('two')
+    two.onpointerdown = () => {
+        siren1.play ()
+    }
+    const suspect1 = document.createElement ('audio')
+    suspect1.src = 'sounds/suspect1.wav'
+
+    const six = document.getElementById ('six')
+    six.onpointerdown = () => {
+        suspect1.play ()
+    }
+    const suspect2 = document.createElement ('audio')
+    suspect2.src = 'sounds/suspect2.wav'
+
+    const five = document.getElementById ('five')
+    five.onpointerdown = () => {
+        suspect2.play ()
+    }
 </script>
-
-
