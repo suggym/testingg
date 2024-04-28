@@ -32,21 +32,21 @@
     <body>
 
         <div class="row">
-            <div class="left-column"><div class="image-container"><img id="one" src="img/icon-01.png" height="400" width="400"/></div></div>
-            <div class="right-column"><div class="image-container"><img id="two" src="img/icon-02.png" height="400" width="400"/></div></div>
-            <div class="center-column"><div class="image-container"><img id="three" src="img/icon-03.png" height="400" width="400"/></div></div>
+            <div class="left-column"><div class="image-container"><img id="one" src="img/icon-01.png" height="400px" width="400px"/></div></div>
+            <div class="right-column"><div class="image-container"><img id="two" src="img/icon-02.png" height="400px" width="400px"/></div></div>
+            <div class="center-column"><div class="image-container"><img id="three" src="img/icon-03.png" height="400px" width="400px"/></div></div>
         </div>
 
         <div class="row">
-            <div class="left-column"><div class="image-container"><img id="four" src="img/icon-04.png" height="400" width="400"/></div></div>
-            <div class="right-column"><div class="image-container"><img id="nine" src="img/icon-09.png" height="400" width="400"/></div></div>
-            <div class="center-column"><div class="image-container"><img id="five" src="img/icon-05.png" height="400" width="400"/></div></div>
+            <div class="left-column"><div class="image-container"><img id="four" src="img/icon-04.png" height="400px" width="400px"/></div></div>
+            <div class="right-column"><div class="image-container"><img id="nine" src="img/icon-09.png" height="400px" width="400px"/></div></div>
+            <div class="center-column"><div class="image-container"><img id="five" src="img/icon-05.png" height="400px" width="400px"/></div></div>
         </div>
 
         <div class="row">
-            <div class="left-column"><div class="image-container"><img id="six" src="img/icon-06.png" height="400" width="400"/></div></div>
-            <div class="right-column"><div class="image-container"><img id="seven" src="img/icon-07.png" height="400" width="400"/></div></div>
-            <div class="center-column"><div class="image-container"><img id="eight" src="img/icon-08.png" height="400" width="400"/></div></div>
+            <div class="left-column"><div class="image-container"><img id="six" src="img/icon-06.png" height="400px" width="400px"/></div></div>
+            <div class="right-column"><div class="image-container"><img id="seven" src="img/icon-07.png" height="400px" width="400px"/></div></div>
+            <div class="center-column"><div class="image-container"><img id="eight" src="img/icon-08.png" height="400px" width="400px"/></div></div>
         </div>
 
     </body>
@@ -70,9 +70,6 @@
         gunshot2.play ()
         nine.src = "img/inconsa2-09.png"
     }
-    nine.onpointerout = () => {
-        nine.src = "img/icon-09.png"
-    }
     const gunshot3 = document.createElement ('audio')
     gunshot3.src = 'sounds/gunshot3.wav'
 
@@ -88,9 +85,6 @@
     eight.onpointerover = () => {
         emt.play ()
         eight.src = "img/inconsa2-08.png"
-    }
-    eight.onpointerout = () => {
-        eight.src = "img/icon-08.png"
     }
     const hands = document.createElement ('audio')
     hands.src = 'sounds/hands.wav'
@@ -115,6 +109,8 @@
     six.onpointerover = () => {
         suspect1.play ()
         six.src = "img/inconsa2-04.png"
+        six.style.width = '400px';
+      six.style.height = '400px';
     }
     const suspect2 = document.createElement ('audio')
     suspect2.src = 'sounds/suspect2.wav'
@@ -131,6 +127,12 @@
     seven.onpointerover = () => {
         siren2.play ()
         seven.src = "img/inconsa2-07.png"
+    }
+    nine.onpointerout = () => {
+        nine.src = "img/icon-09.png"
+    }
+    eight.onpointerout = () => {
+        eight.src = "img/icon-08.png"
     }
     seven.onpointerout = () => {
         seven.src = "img/icon-07.png"
