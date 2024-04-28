@@ -58,56 +58,100 @@
     gunshot1.src = 'sounds/gunshot1.wav'
 
     const one = document.getElementById ('one')
-    one.onpointerdown = () => {
+    one.onpointerover = () => {
         gunshot1.play ()
+        one.src = "img/iconsa2-01.png"
     }
     const gunshot2 = document.createElement ('audio')
     gunshot2.src = 'sounds/gunshot2.wav'
 
     const nine = document.getElementById ('nine')
-    nine.onpointerdown = () => {
+    nine.onpointerover = () => {
         gunshot2.play ()
+        nine.src = "img/iconsa2-09.png"
+    }
+    nine.onpointerout = () => {
+        nine.src = "img/icon-09.png"
     }
     const gunshot3 = document.createElement ('audio')
     gunshot3.src = 'sounds/gunshot3.wav'
 
     const four = document.getElementById ('four')
-    four.onpointerdown = () => {
+    four.onpointerover = () => {
         gunshot3.play ()
+        four.src = "img/iconsa2-04.png"
     }
     const emt = document.createElement ('audio')
     emt.src = 'sounds/emt.wav'
 
     const eight = document.getElementById ('eight')
-    eight.onpointerdown = () => {
+    eight.onpointerover = () => {
         emt.play ()
+        eight.src = "img/iconsa2-08.png"
     }
     const hands = document.createElement ('audio')
     hands.src = 'sounds/hands.wav'
 
     const three = document.getElementById ('three')
-    three.onpointerdown = () => {
+    three.onpointerover = () => {
         hands.play ()
+        three.src = "img/iconsa2-03.png"
     }
     const siren1 = document.createElement ('audio')
     siren1.src = 'sounds/siren1.wav'
 
     const two = document.getElementById ('two')
-    two.onpointerdown = () => {
+    two.onpointerover = () => {
         siren1.play ()
+        two.src = "img/iconsa2-02.png"
     }
     const suspect1 = document.createElement ('audio')
     suspect1.src = 'sounds/suspect1.wav'
 
     const six = document.getElementById ('six')
-    six.onpointerdown = () => {
+    six.onpointerover = () => {
         suspect1.play ()
+        six.src = "img/iconsa2-06.png"
     }
     const suspect2 = document.createElement ('audio')
     suspect2.src = 'sounds/suspect2.wav'
 
     const five = document.getElementById ('five')
-    five.onpointerdown = () => {
+    five.onpointerover = () => {
         suspect2.play ()
+        five.src = "img/iconsa2-05.png"
     }
+    const siren2 = document.createElement ('audio')
+    siren2.src = 'sounds/siren2.wav'
+
+    const seven = document.getElementById ('seven')
+    seven.onpointerover = () => {
+        siren2.play ()
+        seven.src = "img/iconsa2-07.png"
+    }
+    eight.onpointerout = () => {
+        eight.src = "img/icon-08.png"
+    }
+    seven.onpointerout = () => {
+        seven.src = "img/icon-07.png"
+    }
+    six.onpointerout = () => {
+        six.src = "img/icon-06.png"
+    }
+    five.onpointerout = () => {
+        five.src = "img/icon-05.png"
+    }
+    four.onpointerout = () => {
+        four.src = "img/icon-04.png"
+    }
+    three.onpointerout = () => {
+        three.src = "img/icon-03.png"
+    }
+    two.onpointerout = () => {
+        two.src = "img/icon-02.png"
+    }
+    one.onpointerout = () => {
+        one.src = "img/icon-01.png"
+    }
+    document.body.style.backgroundColor = `hsl(0, 0%, 70%)`
 </script>
