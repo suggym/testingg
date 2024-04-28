@@ -79,7 +79,7 @@
     const four = document.getElementById ('four')
     four.onpointerover = () => {
         gunshot3.play ()
-        four.src = "img/inconsa2-04.png"
+        four.src = "img/inconsa2-06.png"
     }
     const emt = document.createElement ('audio')
     emt.src = 'sounds/emt.wav'
@@ -88,6 +88,9 @@
     eight.onpointerover = () => {
         emt.play ()
         eight.src = "img/inconsa2-08.png"
+    }
+    eight.onpointerout = () => {
+        eight.src = "img/icon-08.png"
     }
     const hands = document.createElement ('audio')
     hands.src = 'sounds/hands.wav'
@@ -111,7 +114,7 @@
     const six = document.getElementById ('six')
     six.onpointerover = () => {
         suspect1.play ()
-        six.src = "img/iconsa2-06.png"
+        six.src = "img/inconsa2-04.png"
     }
     const suspect2 = document.createElement ('audio')
     suspect2.src = 'sounds/suspect2.wav'
@@ -128,9 +131,6 @@
     seven.onpointerover = () => {
         siren2.play ()
         seven.src = "img/inconsa2-07.png"
-    }
-    eight.onpointerout = () => {
-        eight.src = "img/icon-08.png"
     }
     seven.onpointerout = () => {
         seven.src = "img/icon-07.png"
